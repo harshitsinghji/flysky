@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.logo img {
+    width: 38%;
+    border-radius: 50%
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+}
+
+.navlist {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    padding: 2px 22px;
+    font-size: 15px;
+    color: white;
+}
+
+.navlist li a:hover {
+    color: gray;
+}
+
+.rightnav {
+    text-align: right;
+    width: 50%;
+}
+
+.rightnav input {
+    padding: 8px 9px;
+    border-radius: 16px;
+    font-weight: bold;
+
+}
+
+.rightnav button {
+    padding: 5px 14px;
+    align-items: center;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.rightnav button:hover {
+
+    background-color: gray;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(buildings.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box {
+    display: flex;
+    height: 80%;
+    max-width: 50%;
+    margin: auto;
+    align-items: center;
+
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.firsthalf {
+    width: 80%;
+    color: white;
+
+}
+
+.secondhalf {
+    width: 30%;
+
+}
+
+.secondhalf img {
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 146px;
+}
+
+.bigtext {
+    font-size: 30px;
+
+}
+
+.smalltext {
+    font-size: 17px;
+    padding: 0px 5px;
+}
+
+.btn {
+    padding: 8px 12px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: gray;
+}
+
+.services {
+    display: flex;
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.left {
+    width: 80%;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right img {
+    height: 200px;
+    width: 200px;
+    border-radius: 55px;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.text {
+    padding: 4px 3px;
+}
+
+
+.services-left {
+    flex-direction: row-reverse;
+}
+
+
+.contact {
+
+    margin-top: 50px;
+    background-color: beige;
+}
+
+.contact h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.form-input {
+    padding: 9px 7px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 19px;
+    margin: 10px 10px;
+}
+
+
+.submitbutton {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.submit {
+
+    padding: 9px 20px;
+    width: 100%;
+    border-radius: 11px;
+    border: 2px solid black;
+    font-weight: bold;
+
+}
+
+.submit:hover {
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+
+
+.text-footer {
+
+    /* display: block; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: white;
+    padding: 16px 10px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+
+.burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    margin: 5px 3px;
+    height: 4px;
+}
+
+
+@media only screen and (max-width: 1160px) {
+
+    .navlist {
+        flex-direction: column;
+    }
+
+    .navlist li {
+        margin: 15px 0px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-out;
+        height: 478px;
+    }
+
+    .rightnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightnav input {
+        align-items: center;
+    }
+
+    .rightnav button {
+        margin: 10px 0px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 60px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .box {
+        max-width: 80%;
+        flex-direction: column-reverse;
+        height: 60%;
+    }
+
+    .bigtext {
+        font-size: 21px;
+
+    }
+
+    .firstsection {
+        height: 65vh;
+    }
+
+    .secondhalf img {
+        width: 75%;
+    }
+
+    .text {
+        padding: 0px 0px;
+        font-size: 15px;
+    }
+
+    .services {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        margin: auto;
+    }
+
+    .right img {
+        height: 110px;
+        width: 110px;
+        border-radius: 35px
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .services {
+        width: 90%;
+    }
+
+    .contact h1 {
+        font-size: 24px;
+    }
+
+    .form-input {
+
+        padding: 3px 14px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 12px;
+        margin: 7px 4px;
+    }
+
+    .submit {
+        padding: 5px 5px;
+        width: 100%;
+        border-radius: 6px;
+        border: 2px solid black;
+        /* font-weight: bold; */
+    }
+
+    .text-footer {
+        /* display: block; */
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        color: white;
+        padding: 11px 10px;
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+    .firsthalf {
+        width: 95%;
+        color: white;
+    }
+
+    .smalltext {
+        font-size: 16px;
+        padding: 0px 0px;
+    }
+
+    .btn {
+        padding: 7px 6px;
+        background: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-top: 6px;
+        cursor: pointer;
+    }
+}
